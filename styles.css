@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    width: 100%;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom right, #7289DA, #5865F2);
@@ -418,15 +419,82 @@ section {
 }
 
 @media (max-width: 768px) {
-    .video-placeholder {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
+  nav {
+      padding: 0.5em 0; 
+      position: fixed; 
+  }
 
-    .register-buttons {
-        flex-direction: column;
-        gap: 1em;
-    }
+  .logo {
+      max-width: 60px; 
+  }
+
+  nav ul {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  nav ul li {
+      margin: 0.5em 0; 
+  }
+
+
+  .video-placeholder {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 6 / 13; 
+  }
+
+  .container-register {
+      flex-direction: column;
+      gap: 1em;
+  }
+
+  .column {
+      width: 100%; 
+  }
+
+  .register-buttons button {
+      padding: 0.8em 1.5em;
+      font-size: 0.8em; 
+  }
+
+  .socials li a {
+      font-size: 14px; 
+  }
+}
+
+@media (max-width: 412px) {
+  body{
+    width: full;
+  }
+  section{
+    width: 412px;
+  }
+  nav {
+      padding: 0.5em 0; 
+  }
+
+  .logo {
+      max-width: 20px; 
+  }
+
+  nav ul li a {
+      font-size: 0.8em; 
+  }
+
+
+  .register-buttons {
+      margin-top: 10px; 
+  }
+
+  .register-buttons button {
+      padding: 0.6em 1.2em; 
+      font-size: 0.7em; 
+  }
+
+  .li{
+      font-size: 12px; 
+      align-items: center;
+}
 }
 }
